@@ -1,0 +1,19 @@
+﻿@model ClothBazar.Entities.Category 
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Category</h2>
+<form method="post">
+    <label>Id</label>
+    <input name="Id" value="@Model.Id" type="hidden"/>
+
+    <label>Name</label>
+    <input name="Name" value="@Model.Name" />
+
+    <label>Description</label>
+    <input name="Description" value="@Model.Description" />
+    <br />
+
+    <button type="submit">SAVE</button>
+</form>
